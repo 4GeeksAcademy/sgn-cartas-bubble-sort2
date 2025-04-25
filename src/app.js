@@ -74,7 +74,7 @@ document.querySelector('#sort').addEventListener('click', () => {
   selectionSort(deck);
   document.querySelector('.solution-log').innerHTML = log.map((step, i) => `
     <li>
-      <i>Step ${i + 1}:</i>
+      <i>Swap ${i + 1}:</i>
       <div class="deck">${step.map(renderCard).join('')}</div>
     </li>
   `).join('');
